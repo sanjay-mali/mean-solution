@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overscroll-behavior-y: none;
+  user-select: none;
+}
+
+a:hover {
+  transform: rotate(-90deg) !important;
+  cursor: pointer;
+}
+
+.divider-elipse-small {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+  overflow: visible;
+}
+
+.maiin {
+  transition: all 0.3s linear;
+  will-change: height;
+}
+.maiin:hover {
+  transition: all 0.3s linear;
+  will-change: height;
+  height: 250px;
+  .lets {
+    transition: all 0.2s linear;
+    opacity: 1;
+    display: block;
+    will-change: opacity;
+  }
+}
+.mask {
+  mask-image: url("/public/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #ec4e39;
+  position: absolute;
+  color: black;
+}

@@ -1,0 +1,41 @@
+button {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+  cursor: pointer;
+}
+
+button > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+button .clone > *,
+button .text > * {
+  opacity: 1;
+  font-size: 1rem;
+  transition: 0.4s;
+  margin-left: 4px;
+}
+
+button .clone > * {
+  transform: translateY(60px);
+}
+
+button:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
